@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+body{
+    font-family: "Poetsen One", sans-serif;
+    overflow: hidden;
+    background: conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);
+}
+.container{
+    border: 1px solid black;
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.digitalClock{
+    border: 1px sloid black;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 2px;
+    color: #fff;
+    
+}
+.digitalClock h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+@media(max-width:768px) {
+    #bar1, #bar2, #bar3{
+        display: none;
+    }
+    .digitalClock{
+        text-align: center;
+        width: 100%;
+    }
+    .digitalClock h1{
+        display: block;
+    }
+}
+@media(max-width:480px) {
+    .digitalClock h1{
+        font-size: 4rem;
+    }
+}
